@@ -1,0 +1,33 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "oxc-lsp-marketplace",
+  "description": "Oxlint language server plugin for Claude Code",
+  "plugins": [
+    {
+      "name": "oxc-lsp",
+      "description": "Oxlint language server for fast JS/TS linting in Claude Code",
+      "version": "0.1.0",
+      "source": ".",
+      "category": "development",
+      "lspServers": {
+        "oxlint": {
+          "command": "oxlint",
+          "args": ["--lsp"],
+          "extensionToLanguage": {
+            ".js": "javascript",
+            ".jsx": "javascriptreact",
+            ".ts": "typescript",
+            ".tsx": "typescriptreact",
+            ".mjs": "javascript",
+            ".cjs": "javascript",
+            ".mts": "typescript",
+            ".cts": "typescript",
+            ".vue": "vue",
+            ".astro": "astro",
+            ".svelte": "svelte"
+          }
+        }
+      }
+    }
+  ]
+}

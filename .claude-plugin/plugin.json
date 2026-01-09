@@ -1,0 +1,24 @@
+{
+  "name": "oxc-lsp",
+  "version": "0.1.0",
+  "description": "Oxlint language server for fast JS/TS linting in Claude Code",
+  "lspServers": {
+    "oxlint": {
+      "command": "oxlint",
+      "args": ["--lsp"],
+      "extensionToLanguage": {
+        ".js": "javascript",
+        ".jsx": "javascriptreact",
+        ".ts": "typescript",
+        ".tsx": "typescriptreact",
+        ".mjs": "javascript",
+        ".cjs": "javascript",
+        ".mts": "typescript",
+        ".cts": "typescript",
+        ".vue": "vue",
+        ".astro": "astro",
+        ".svelte": "svelte"
+      }
+    }
+  }
+}
