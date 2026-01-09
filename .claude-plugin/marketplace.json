@@ -2,13 +2,20 @@
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "oxc-lsp-marketplace",
   "description": "Oxlint language server plugin for Claude Code",
+  "owner": {
+    "name": "EthanShoeDev"
+  },
   "plugins": [
     {
       "name": "oxc-lsp",
       "description": "Oxlint language server for fast JS/TS linting in Claude Code",
       "version": "0.1.0",
+      "author": {
+        "name": "EthanShoeDev"
+      },
       "source": ".",
       "category": "development",
+      "strict": false,
       "lspServers": {
         "oxlint": {
           "command": "oxlint",

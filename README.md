@@ -20,13 +20,11 @@ Add this repository as a marketplace and install the plugin:
 
 ```bash
 # Add the marketplace
-/plugin marketplace add owner/oxc-lsp-claude-plugin
+/plugin marketplace add EthanShoeDev/oxc-lsp-claude-plugin
 
 # Install the plugin
 /plugin install oxc-lsp@oxc-lsp-marketplace
 ```
-
-Replace `owner` with the GitHub username or organization hosting this repository.
 
 ### From Local Path
 
